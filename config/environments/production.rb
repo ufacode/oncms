@@ -35,6 +35,11 @@ Rails.application.configure do
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
 
+  %w(stylesheets javascripts fonts images).each do |sub|
+    config.assets.paths << ::Bootstrap::Rails::Engine.root.join('assets', sub)
+  end
+  config.assets.precompile << %r(bootstrap/glyphicons-halflings-regular\.(?:eot|svg|ttf|woff)$)
+
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Specifies the header that your server uses for sending files.
