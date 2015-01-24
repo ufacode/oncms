@@ -35,6 +35,3 @@ test:
 #
 production:
   <<: *default
-  database: oncms_production
-  username: oncms
-  password: <%= ENV['ONCMS_DATABASE_PASSWORD'] %>
