@@ -1,0 +1,28 @@
+html, body {
+  font-family:"Helvetica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  color:#000;
+  text-align:left;
+}
+body{
+  padding-top: 60px;
+}
+
+div {
+    margin:0;
+}
+
+h1 {
+  font-family:"Crimson Text", serif;
+  font-style:italic;
+  font-weight:600;
+  font-size:28px;
+  margin:0 0 30px;
+}
+
+p {
+  font-size:18px;
+  margin-top:27px;
+  line-height:140%;
+}
